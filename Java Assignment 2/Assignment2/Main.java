@@ -197,6 +197,10 @@ class Main {
 
         // 6. Get Student Result in Group
         // resultData.getAllResults();
+
+
+       List<String> str = resultData.getResultsByStudent(prahant);
+       System.out.println(str);
     
 
 

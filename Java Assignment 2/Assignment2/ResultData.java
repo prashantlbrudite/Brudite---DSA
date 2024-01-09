@@ -21,11 +21,11 @@ public class ResultData {
     }
 
 
-    public List<Result> getResultsByStudent(Student student) {
-        List<Result> resultsByStudent = new ArrayList<>();
+    public List<String> getResultsByStudent(Student student) {
+        List<String> resultsByStudent = new ArrayList<>();
         for (Result result : resultList) {
             if (result.getStudent().equals(student)) {
-                resultsByStudent.add(result);
+                resultsByStudent.add(result.toString());
             }
         }
         return resultsByStudent;
@@ -100,7 +100,7 @@ public class ResultData {
 
         int count = 1;
         for(Integer marks :reverseMap.keySet()){
-            System.out.println(count++ + ". "+ reverseMap.get(marks) + " with average of " + marks);
+            System.out.println(count++ + ". "+ reverseMap.get(marks) + " with an average of " + marks);
         }
     }
 
